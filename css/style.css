@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/slider-01.jpg) ; 
+    background-size: cover;
+
+    position: relative;
+    background-attachment: fixed;
+}
+
+.container .pos {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .navbar {
+    width: 100%;
+    background-color: dimgray;
+    position: fixed;
+    z-index: 258;
+}
+
+.container .navbar h1 {
+    width: 40%;
+    text-align: center;
+    color: crimson;
+    padding: 25px;
+    float: left;
+}
+
+.container .navbar h1 span {
+    color: dodgerblue;
+}
+
+.container .navbar ul {
+    width: 50%;
+    font-size: 20px;
+    float: right;
+    list-style: none;
+}
+
+.container .navbar ul li {
+    float: left;
+    padding: 30PX 25px;
+}
+
+.container .navbar ul li a {
+    color: coral;
+    padding: 25px;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.container .navbar ul li a:hover {
+    color: brown;
+}
+
+.clr {
+    clear: both;
+}
+
+.container .contact {
+    /* text-align: center; */
+    /* margin-top: 200px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container .contact p {
+    color: #fff;
+    padding: 25px 0px 25px 0px;
+    font-size: 20px;
+}
+
+.container .contact h2 {
+    color: coral;
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+.container .contact span {
+    color: deeppink;
+    font-size: 30px;
+}
+
+.container .contact .color {
+    color: blue;
+}
+
+.container .contact button {
+    padding: 20px 50px;
+    background: linear-gradient(90deg, rgba(34,193,195,1), rgba(253,187,45,1)); 
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    color: rgb(202, 29, 29);
+    transition: background-color 1s, transform 1s;
+}
+
+.contact button:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:399) {
+    .container {
+        background-position: center center;
+    }
+
+    .container .contact button {
+        padding: 5px 20px;
+        border-radius: 1px;
+        font-size: 16;
+    }
+
+    .container .contact h2 {
+        font-size: 16px;
+    }
+
+    .container .contact p {
+        font-size: 15px;
+    }
+
+    .container .contact span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:667px) and (min-width:400px) {
+    .container {
+        background-position: center center;
+    }
+
+    .container .contact button {
+        padding: 10px 30px;
+    }
+
+    .container .contact h2 {
+        font-size: 20px;
+    }
+
+    .container .contact p {
+        font-size: 18px;
+    }
+
+    .container .contact span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:968px) and (min-width:668px) {
+    .container {
+        background-position: center center;
+    }
+
+    .container .contact button {
+        padding: 15px 40px;
+    }
+
+    .container .contact h2 {
+        font-size: 25px;
+    }
+
+    .container .contact p {
+        font-size: 18px;
+    }
+
+    .container .contact span {
+        font-size: 25px;
+    }
+}
+
+.parent {
+    width: 100%;
+    background-color: rgb(243, 218, 209);
+}
+
+.parent .projects {
+    width: 90%;
+    margin: auto;
+}
+
+.parent .projects h3 {
+    color: coral;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.parent .projects .item {
+    width: 33.333%;
+    padding: 20px;
+    float: left;
+    text-align: center;
+
+}
+
+.parent .projects .item .inner {
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    transition: transform 1s;
+}
+
+.parent .projects .item img {
+    width: 90%;
+}
+
+.parent .projects .item .im {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.parent .projects .item .inner:hover .im {
+    opacity: 1;
+}
+
+.parent .projects .item .inner:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:767px) {
+
+    .parent .projects .item {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:968px) and (min-width:768px) {
+    .parent .projects .item {
+        width: 50%;
+    }
+}
+
+.about {
+    width: 100%;
+    background-color: coral;
+}
+
+.about .con {
+    width: 90%;
+    margin: auto;
+}
+
+.about .con .item {
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    padding: 30px;
+}
+
+.about .con .item .inner {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: #fff;
+    padding: 10px;
+    transition: transform 1s;
+}
+
+.about .con .item .inner:hover {
+    transform: scale(1.0584);
+}
+
+.about .con .item .inner h2 {
+    color: blue;
+    font-style: italic;
+    font-size: 30px;
+    padding: 30px;
+
+}
+
+.about .con .item .inner p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about .con .item .inner img {
+    width: 90%;
+}
+
+.about .con h2 {
+    text-align: center;
+    color: crimson;
+    font-size: 30px;
+    padding: 30px;
+}
+
+@media screen and (max-width:767px) {
+
+    .about .con .item {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:968px) and (min-width:768px) {
+    .about .con .item {
+        width: 50%;
+    }
+}
+
+.contacts {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.contacts h2 {
+    color: crimson;
+    font-size: 35px;
+    padding: 50px;
+}
+
+.contacts h2 span {
+    font-size: 40px;
+    color: deeppink;
+}
+.contacts .fa-brands{
+    padding: 10px;
+
+}
+.contacts .fa-solid{
+    padding: 10px;
+}
+.contacts .fa-facebook:hover{
+    color:blue;
+}
+.contacts .fa-twitter:hover{
+    color: deepskyblue;
+}
+.contacts .fa-youtube:hover{
+    color: crimson;
+}
+.contacts .fa-envelope:hover{
+    color: darkgrey;
+}
